@@ -15,6 +15,13 @@ src/
 ├── movieexercise/
 │   ├── Movie.java    # Class with method overriding and equals/hashCode usage
 │   └── Main.java     # Object creation and equality comparison of Movie class instances
+├── livingbeing/
+│   ├── LivingBeing.java # Sealed abstract superclass with name and getInfo()
+│   ├── Animal.java       # Non-sealed subclass with species, getInfo(), and makeSound()
+│   ├── Dog.java          # Subclass of Animal overriding makeSound()
+│   ├── Cat.java          # Subclass of Animal overriding makeSound()
+│   ├── Human.java        # Final subclass with overloading (introduce), equals() and hashCode()
+│   └── Main.java         # Tests instance creation, polymorphism, instanceof, and equality
 ```
 
 ---
@@ -43,6 +50,24 @@ Also includes:
 
 ---
 
+### 🌱 LivingBeing Exercise
+
+Implements a complete sealed class hierarchy:
+
+- `LivingBeing` is a `sealed abstract class`
+- `Animal` is `non-sealed` and has a generic `makeSound()` method
+- `Dog` and `Cat` override `makeSound()`
+- `Human` is a `final` class with overloaded methods and overrides `equals()` and `hashCode()`
+
+**Concepts applied:**
+- Sealed classes (`sealed`, `non-sealed`, `final`)
+- Abstract classes and method overriding
+- Polymorphism and method overloading
+- Object comparison and hash identity (`equals()` and `hashCode()`)
+- Use of `instanceof`
+
+---
+
 ## 🛠️ Technologies
 
 - Java 17
@@ -60,7 +85,7 @@ Also includes:
 
 2. Open the project in **IntelliJ IDEA**
 
-3. Run the `Main` classes inside each exercise folder (`bookexercise`, `movieexercise`)
+3. Run the `Main` classes inside each exercise folder (`bookexercise`, `movieexercise`, `livingbeing`)
 
 ---
 
@@ -73,7 +98,6 @@ Each folder represents a different exercise, with focus on the main OOP pillars:
 - Inheritance
 - Abstraction
 - Polymorphism
-
 ---
 
 ## 💖 Made with care by [Larissa Albuquerque](https://github.com/lalbuquerques)
